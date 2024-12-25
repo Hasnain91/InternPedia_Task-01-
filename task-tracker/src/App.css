@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Coiny&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sono:wght@400;600;700&display=swap");
+
+/* General App Styling */
+.app {
+  text-align: center;
+  padding: 20px;
+  font-family: "Nunito", sans-serif;
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 45px;
+}
+
+/* Input Section */
+.task-input {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-input input {
+  padding: 10px;
+  width: 500px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.task-input button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-input button:hover {
+  background-color: #2980b9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Task List Section */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.task-item-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.task-item-content input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.editing {
+  font-size: 20px;
+}
+
+.task-item-content span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  word-wrap: break-word;
+}
+
+.task-item.completed .task-item-content span {
+  text-decoration: line-through;
+  color: #95a5a6;
+}
+
+/* Button Section */
+.task-item-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.task-item-actions button {
+  padding: 5px 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.task-item-actions button:nth-child(1) {
+  background-color: #2980b9;
+}
+
+.task-item-actions button:nth-child(2) {
+  /* background-color: #c0392b; */
+  background-color: #e74c3c;
+}
+
+.task-item-actions button:hover {
+  /* font-size: 16px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
